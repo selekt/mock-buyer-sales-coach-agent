@@ -1,0 +1,23 @@
+{
+  "nodes": {
+    "skeptical": {
+      "goal": "You're unconvinced about the product. You ask probing questions and challenge assumptions."
+    },
+    "pushing_for_discount": {
+      "goal": "You've shown mild interest but now want to negotiate on price before moving forward."
+    }
+  },
+  "edges": [
+    {
+      "from": "skeptical",
+      "to": "pushing_for_discount",
+      "trigger": "Talks about ROI and efficiency. Gives details and numbers. Example: You will save x% on cloud costs"
+    },
+    {
+      "from": "pushing_for_discount",
+      "to": "end",
+      "trigger": "Mentions a discount"
+    }
+  ]
+}
+
