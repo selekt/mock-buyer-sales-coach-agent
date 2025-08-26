@@ -17,7 +17,7 @@ with open("conversation_flow.json") as f:
 class AgentState(dict):
     pass
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "<api key>"
 client = ChatOpenAI()
 # === LLM Buyer Response Generator ===
 def buyer_response_fn(state: AgentState):
